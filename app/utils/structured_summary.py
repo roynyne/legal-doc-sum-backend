@@ -1,9 +1,9 @@
 # structured_summary.py
 
-from legal_doc_sum.section_classifier import classify_sentences
-#from legal_doc_sum.models.extractive_minilm import advanced_extractive_summary
-from legal_doc_sum.models.extractive_legalbert import advanced_extractive_summary #TEST FOR LEGALBERT
-from legal_doc_sum.models.abstractive_bart_distilled import summarize_text  # BART wrapper that takes raw text
+from app.utils.section_classifier import classify_sentences
+#from app.models.extractive_minilm import advanced_extractive_summary
+from app.models.extractive_legalbert import advanced_extractive_summary
+from app.models.abstractive_bart_distilled import summarize_text
 
 def structured_summary_pipeline(sentences, catchphrases=None, top_k=5):
     """

@@ -1,7 +1,7 @@
 # abstractive_bart_distilled.py
 
 from transformers import pipeline
-from legal_doc_sum.models.extractive_minilm import advanced_extractive_summary
+#from app.models.extractive_minilm import advanced_extractive_summary
 
 _model = None  # Cache model after first load
 
